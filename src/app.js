@@ -6,8 +6,10 @@ const PORT = 8080;
 
 const app = express();
 
+app.set('view engine', 'jade');
+
 app.get('/', function (req, res) {
-  res.send('Welcome to ecs-demo-nodejs-simple-app\n');
+  res.render('index', { title: 'ECS Hands On'} );
 });
 
 app.listen(PORT);

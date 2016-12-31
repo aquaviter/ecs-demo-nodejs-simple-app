@@ -1,0 +1,19 @@
+{
+    "family": "ecs-demo-app",
+    "containerDefinitions": [
+        {
+            "environment": [],
+            "name": "ecs-demo-nodejs-simple-app",
+            "image": "node/boron",
+            "cpu": 10,
+            "memory": 500,
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 80
+                }
+            ],
+            "essential": true
+        }
+    ]
+}
